@@ -1,0 +1,226 @@
+@font-face {
+	font-family: 'Dancing Script';
+	src: url('Dancing%20Script%20OT.otf')
+}
+
+body {
+	margin: 20px;
+	background-color: black;
+	color: white;
+	font-family: 'Dancing Script';
+}
+
+header h1{
+	text-align: center;
+	padding-left: 7px;
+}
+
+footer {
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+	color: black;
+	vertical-align: text-top;
+	display: flex;
+	width: 100%;
+}
+
+#c31 {
+	padding: 0cm 1cm;
+	line-height: 15px;
+}
+
+#c32 {
+	padding: 0cm 1cm;
+	line-height: 15px;
+}
+
+#c33 {
+	padding: 0cm 1cm;
+	line-height: 15px;
+}
+
+#c34 {
+	padding: 0cm 2cm;
+	line-height: 15px;
+}
+
+img{
+	border: 2px solid white;
+}
+
+.c1 {
+	-webkit-border-top-left-radius: 7px;
+	-webkit-border-top-right-radius: 7px;
+	background-color:  #5b7989;
+	display: block;
+	width: 100%;
+}
+
+header{
+	display: flex;
+}
+
+.c1a {
+	background-color: #82c3a6;
+	height: 300px;
+}
+
+.c2 {
+	background-color: #d5c75f;
+}
+
+.c3 {
+	-webkit-border-bottom-left-radius: 7px;
+	-webkit-border-bottom-right-radius: 7px;
+	background-color: #C6d5c5;
+	display: block;
+}
+
+.topnav{
+	padding-left: 30%;
+	padding-top: 2%;
+}
+
+.topnav a {
+	color: #f2f2f2;
+	background-color:  #5b7989;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.blur {-webkit-filter: blur(10px);filter: blur(10px);}
+.grayscale {-webkit-filter: grayscale(100%);filter: grayscale(100%);}
+.sepia {-webkit-filter: sepia(90%);filter: sepia(90%);}
+
+#galeria {
+	border: 1px;
+	display: flex;
+	justify-content: center;
+}
+
+#galeria figure {
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+}
+
+
+#galeria figure {
+	width: 30%;
+}
+#final {
+	width: 100%;
+}
+
+
+#galeria figure img {
+	width: 100%;
+}
+
+img{
+	width: 250px;
+}
+
+#galeria1 {
+	border: 1px;
+	display: flex;
+	justify-content: center;
+}
+#galeria1 figure {
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+}
+
+
+
+#galeria1 figure img {
+	width: 100%;
+}
+
+img{
+	width: 250px;
+}
+
+#paisa:hover {
+	-webkit-transition: 3s;
+	-webkit-transform: rotate3d(100,100,100, 360deg);
+}
+
+@keyframes retra-animacion {
+	0% {
+		position: relative;
+		left: 0px
+	}
+	50% {
+		position: relative;
+		left: 100px;
+	}
+	100% {
+		position: relative;
+		left: 0px;
+	}
+}
+
+#retra:hover img{
+	animation-name: retra-animacion;
+	animation-duration: 2s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+#contenido {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	alignment-adjust: central;
+	margin: auto;
+	border-radius: 10px;
+	animation-duration: 2s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+	0%{
+		margin-top: 120%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0;
+	}
+}
+
+#contenido {
+	width: 900px;
+}
+
+@media only screen and (max-width: 900px){
+	footer{
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+
+	header{
+		display: block;
+	}
+
+	#galeria{
+		display: block;
+	}
+
+	.c3{
+		width: 100%;
+	}
+
+	#contenido {
+		width: 100%;
+	}
+}
